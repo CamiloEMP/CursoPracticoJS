@@ -1,5 +1,4 @@
 // Coodigo cuadrado
-console.group("Cuadrados");
 
 function perimetroC(lado){
   return lado * 4;
@@ -8,30 +7,25 @@ function perimetroC(lado){
 function areaC(lado){
   return lado * lado;
 }
-console.groupEnd()
 
 // Codigo triangulo
-console.group("Triangulos");
 
 function perimetroT(a, b, base){
-  let result = a + b + base
-  return result;
+  return a + b + base
 }
-function areaT(h, base) {
-  return (base * h) / 2;
-}
-console.groupEnd();
 
-function isosceles(a, b, base) {
-  if (a == b) {
-    let mitadBase = base / 2;
-    let altura = Math.sqrt((b**2) - (mitadBase**2));
-    console.log(altura)
-  } else {
-    console.log("No es un triangulo isósceles");
-  }
+function areaT(lado, base) {
+  let z = base / 2;
+  let h = Math.sqrt((lado**2) + (z**2))
+  return (base * h) / 2
 }
-isosceles(2, 2, 3);
+
+function isosceles(b, base) {
+  let mitadBase = base / 2;
+  let altura = Math.sqrt((b**2) - (mitadBase**2));
+  return altura
+}
+
 // Codigo Circulo
 console.group("Circulos");
 //Diamtero
@@ -66,14 +60,56 @@ function areaCuadrado() {
   alert(perimetro);
 }
 
-// Triangulo1
 function perimetroTriangulo1() {
   let ladoA = parseFloat(document.getElementById("inputLadoA").value);
   let ladoB = parseFloat(document.getElementById("inputLadoB").value);
   let base = parseFloat(document.getElementById("inputBase").value);
-  let perimetro = perimetroT(ladoA, ladoB, base);
-  alert(perimetro);
+  if (ladoA == ladoB && base == ladoA) {
+    alert(perimetroT(ladoA, ladoB, base));
+  } else {
+    alert("No es un triangulo equilatero, revisa las medidas")
+  }
 }
+
 function areaTriangulo1() {
-  let altura = parseFloat(document.getElementById(inputLado))
+  let ladoA = parseFloat(document.getElementById("inputLadoA").value);
+  let ladoB = parseFloat(document.getElementById("inputLadoB").value);
+  let base = parseFloat(document.getElementById("inputBase").value);
+  if (ladoA == ladoB && base == ladoA) {
+    return alert(areaT(ladoA, base));
+  } else {
+    alert("No es un triangulo equilatero, revisa las medidas");
+    }
+}
+
+function pTrianguloIsosc() {
+  let a = parseFloat(document.getElementById("ladoAIsosceles").value);
+  let b = parseFloat(document.getElementById("ladoBIsosceles").value);
+  let base = parseFloat(document.getElementById("baseIsosceles").value);
+  if (a == b && a != base) {
+    return alert(perimetroT(a, b, base));
+  } else {
+    return alert("No es un triangulo Isosceles, revisa las medidas");
+  }
+}
+
+function hTrianguloIsosc() {
+  let a = parseFloat(document.getElementById("ladoAIsosceles").value);
+  let b = parseFloat(document.getElementById("ladoBIsosceles").value);
+  let base = parseFloat(document.getElementById("baseIsosceles").value);
+  if (a == b && a != base) {
+    return alert(isosceles(b, base))
+  } else {
+    return alert("No es un triangulo Isosceles, revisa las medidas")
+  }
+}
+function aTrianguloIsosc() {
+  let a = parseFloat(document.getElementById("ladoAIsosceles").value);
+  let b = parseFloat(document.getElementById("ladoBIsosceles").value);
+  let base = parseFloat(document.getElementById("baseIsosceles").value);
+  if (a == b && a != base) {
+    return alert(areaT(a, b, base))
+  } else {
+    return alert("No es un triangulo Isosceles, revisa las medidas")
+  }
 }

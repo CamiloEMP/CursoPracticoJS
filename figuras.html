@@ -20,16 +20,31 @@
     </form>
   </section>
   <section class="triangulo">
-    <h2>Calcular el área y perímetro de un triangulo</h2>
+    <h2>Calcular el área y perímetro de un triangulo equilatero</h2>
     <form>
-      <label for="inputLadoA">Cuanto mide el lado "a" del triangulo</label>
+      <label for="inputLadoA">¿Cuanto mide el primer lado?</label>
       <input id="inputLadoA" type="number">
-      <label for="inputLadoB">Cuanto mide el lado "b" del triangulo</label>
+      <label for="inputLadoB">¿Cuanto mide el segundo lado?</label>
       <input id="inputLadoB" type="number">
-      <label for="inputBase">Cuanto mide la base del triangulo</label>
+      <label for="inputBase">¿Cuanto mide la base?</label>
       <input id="inputBase" type="number">
       <button type="button" onclick="perimetroTriangulo1()">Calcular el perímetro</button>
       <button type="button" onclick="areaTriangulo1()">Calcular el área</button>
+    </form>
+  </section>
+
+  <section class="trianguloIsosc">
+    <h2>Calcular el área y perímetro de un triangulo isosceles</h2>
+    <form>
+      <label for="ladoAIsosceles">¿Cuanto mide el primer lado?</label>
+      <input id="ladoAIsosceles" type="number">
+      <label for="ladoBIsosceles">¿Cuanto mide el segundo lado?</label>
+      <input id="ladoBIsosceles" type="number">
+      <label for="baseIsosceles">¿Cuanto mide la base?</label>
+      <input id="baseIsosceles" type="number">
+      <button type="button" onclick="pTrianguloIsosc()">Calcular el perímetro</button>
+      <button type="button" onclick="hTrianguloIsosc()">Calcular la altura</button>
+      <button type="button" onclick="aTrianguloIsosc()">Calcular el área</button>
     </form>
   </section>
   <script src="./figuras.js"></script>
