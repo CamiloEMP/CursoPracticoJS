@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  background-color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin: 1rem;
+}
+
+.header{
+  color: white;
+  margin: 1.5rem;
+  text-align: center;
+}
+
+.container {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  padding: .5rem;
+}
+
+.cuadrado {
+  background-color: rgb(241, 69, 126);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.triangulo {
+  background-color: rgb(186, 11, 240);
+  border-radius: 1rem;
+  margin-top: .7rem;
+  padding: 1rem;
+}
+
+.trianguloIsosc {
+  background-color: rgba(54, 33, 245, 0.959);
+  border-radius: 1rem;
+  margin-top: .7rem;
+  padding: 1rem;
+}
+
+form {
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+input {
+  
+}
+
+button {
+  /*background-color: rgb(5, 245, 253);*/
+  border: .2rem solid rgb(255, 255, 255);
+  background-color: transparent;
+  border-radius: 1rem;
+  color: white;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: .8rem;
+}
+button:hover{
+  background-color: rgba(221, 183, 247, 0.507);
+  transition: .3s;
+  cursor: pointer;
+}
