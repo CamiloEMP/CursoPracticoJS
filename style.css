@@ -27,7 +27,7 @@ h2 {
   color: white;
   display: flex;
   flex-wrap: wrap;
-  margin: 1rem;
+  margin: 1.4rem;
   padding: .5rem;
 }
 
@@ -35,20 +35,22 @@ h2 {
   background-color: rgb(241, 69, 126);
   border-radius: 1rem;
   padding: 1rem;
+  margin: 1rem auto;
+  width: 100%;
 }
 
 .triangulo {
   background-color: rgb(186, 11, 240);
   border-radius: 1rem;
-  margin-top: .7rem;
-  padding: 1rem;
+  margin-bottom: 1rem;
+  margin: 1rem auto;
 }
 
 .trianguloIsosc {
   background-color: rgba(54, 33, 245, 0.959);
   border-radius: 1rem;
   margin-top: .7rem;
-  padding: 1rem;
+  margin: 1rem auto;
 }
 
 form {
@@ -57,9 +59,17 @@ form {
 }
 
 input {
-  
+  background-color: transparent;
+  border: .1rem solid rgb(255, 255, 255);
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  padding: .5rem .7rem;
+  outline: none;
 }
-
 button {
   /*background-color: rgb(5, 245, 253);*/
   border: .2rem solid rgb(255, 255, 255);
