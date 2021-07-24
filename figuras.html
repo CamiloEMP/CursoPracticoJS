@@ -4,49 +4,54 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 600px)">
+  <link rel="stylesheet" href="./Desktop.css" media="screen and (min-width: 800px)">
+  <link rel="stylesheet" href="./style.css">
   <title>Figuras geométricas</title>
 </head>
 <body>
-  <header>
+  <header class="header">
     <h1>Calcular figuras geométricas</h1>
   </header>
-  <section class="cuadrado">
-    <h2>Calcula el área y perímetro de un cuadrado</h2>
-    <form>
-      <label for="inputCuadrado">¿Cuando mide cada lado del cuadrado?</label>
-      <input id="inputCuadrado" type="number">
-      <button type="button" onclick="perimetroCuadrado()">Calcular el perímetro</button>
-      <button type="button" onclick="areaCuadrado()">Calcular el área</button>
-    </form>
-  </section>
-  <section class="triangulo">
-    <h2>Calcular el área y perímetro de un triangulo equilatero</h2>
-    <form>
-      <label for="inputLadoA">¿Cuanto mide el primer lado?</label>
-      <input id="inputLadoA" type="number">
-      <label for="inputLadoB">¿Cuanto mide el segundo lado?</label>
-      <input id="inputLadoB" type="number">
-      <label for="inputBase">¿Cuanto mide la base?</label>
-      <input id="inputBase" type="number">
-      <button type="button" onclick="perimetroTriangulo1()">Calcular el perímetro</button>
-      <button type="button" onclick="areaTriangulo1()">Calcular el área</button>
-    </form>
-  </section>
-
-  <section class="trianguloIsosc">
-    <h2>Calcular el área y perímetro de un triangulo isosceles</h2>
-    <form>
-      <label for="ladoAIsosceles">¿Cuanto mide el primer lado?</label>
-      <input id="ladoAIsosceles" type="number">
-      <label for="ladoBIsosceles">¿Cuanto mide el segundo lado?</label>
-      <input id="ladoBIsosceles" type="number">
-      <label for="baseIsosceles">¿Cuanto mide la base?</label>
-      <input id="baseIsosceles" type="number">
-      <button type="button" onclick="pTrianguloIsosc()">Calcular el perímetro</button>
-      <button type="button" onclick="hTrianguloIsosc()">Calcular la altura</button>
-      <button type="button" onclick="aTrianguloIsosc()">Calcular el área</button>
-    </form>
-  </section>
+  <main class="container">
+    <section class="cuadrado">
+      <h2>Calcula el área y perímetro de un cuadrado</h2>
+      <form>
+        <label for="inputCuadrado">¿Cuando mide cada lado del cuadrado?</label>
+        <input id="inputCuadrado" type="number">
+        <button type="button" onclick="perimetroCuadrado()">Calcular el perímetro</button>
+        <button type="button" onclick="areaCuadrado()">Calcular el área</button>
+      </form>
+    </section>
+    <section class="triangulo">
+      <h2>Calcular el área y perímetro de un triangulo equilatero</h2>
+      <form>
+        <label for="inputLadoA">¿Cuanto mide el primer lado?</label>
+        <input id="inputLadoA" type="number">
+        <label for="inputLadoB">¿Cuanto mide el segundo lado?</label>
+        <input id="inputLadoB" type="number">
+        <label for="inputBase">¿Cuanto mide la base?</label>
+        <input id="inputBase" type="number">
+        <button type="button" onclick="perimetroTriangulo1()">Calcular el perímetro</button>
+        <button type="button" onclick="areaTriangulo1()">Calcular el área</button>
+      </form>
+    </section>
+    <section class="trianguloIsosc">
+      <h2>Calcular el área y perímetro de un triangulo isosceles</h2>
+      <form>
+        <label for="ladoAIsosceles">¿Cuanto mide el primer lado?</label>
+        <input id="ladoAIsosceles" type="number">
+        <label for="ladoBIsosceles">¿Cuanto mide el segundo lado?</label>
+        <input id="ladoBIsosceles" type="number">
+        <label for="baseIsosceles">¿Cuanto mide la base?</label>
+        <input id="baseIsosceles" type="number">
+        <button type="button" onclick="pTrianguloIsosc()">Calcular el perímetro</button>
+        <button type="button" onclick="hTrianguloIsosc()">Calcular la altura</button>
+        <button type="button" onclick="aTrianguloIsosc()">Calcular el área</button>
+      </form>
+    </section>
+  </main>
+  
   <script src="./figuras.js"></script>
 </body>
 </html>
