@@ -34,7 +34,6 @@ h2 {
 .cuadrado {
   background-color: rgb(241, 69, 126);
   border-radius: 1rem;
-  padding: 1rem;
   margin: 1rem auto;
   width: 100%;
 }
@@ -53,11 +52,21 @@ h2 {
   margin: 1rem auto;
 }
 
+.circulo {
+  background-color: rgba(104, 1, 99, 0.959);
+  border-radius: 1rem;
+  margin-top: .7rem;
+  margin: 1rem auto;
+  order: unset;
+}
+
 form {
   font-size: 1.4rem;
   padding: 1rem;
 }
-
+label {
+  display: inline-block;
+}
 input {
   background-color: transparent;
   border: .1rem solid rgb(255, 255, 255);
@@ -69,7 +78,9 @@ input {
   margin: 1rem 0;
   padding: .5rem .7rem;
   outline: none;
+  width: 40%;
 }
+
 button {
   /*background-color: rgb(5, 245, 253);*/
   border: .2rem solid rgb(255, 255, 255);
@@ -79,9 +90,16 @@ button {
   font-family: inherit;
   font-size: 1.2rem;
   padding: .8rem;
+  width: 40%;
 }
+
 button:hover{
   background-color: rgba(221, 183, 247, 0.507);
   transition: .3s;
   cursor: pointer;
+}
+
+.buttom-margin {
+  margin-bottom: 1rem;
+  margin-top: .2rem;
 }

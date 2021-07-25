@@ -35,12 +35,12 @@ function diametroC(radio){
 // PI
 const PI = Math.PI;
 // Circuferencia
-function perimetroCicurlo(radio) {
+function perimetroCir(radio) {
   let diametro = diametroC(radio);
   return diametro * PI;
 }
 //Área
-function areaCiruclo(radio){
+function areaC(radio){
   return (radio * radio) * PI;
 }
 console.groupEnd();
@@ -111,5 +111,30 @@ function aTrianguloIsosc() {
     return alert(areaT(a, b, base))
   } else {
     return alert("No es un triangulo Isosceles, revisa las medidas")
+  }
+}
+
+function circuferenciaCriculo(){
+  let radio = parseFloat(document.getElementById("radio").value);
+  if (radio > 0) {
+    return alert(perimetroCir(radio));
+  } else {
+    return alert("Error, valores negativos");
+  }
+}
+function diametroCriculo(){
+  let radio = parseFloat(document.getElementById("radio").value);
+  if (radio > 0) {
+    return alert(diametroC(radio));
+  } else {
+    return alert("Error, valores negativos");
+  }
+}
+function areaCirculo(){
+  let radio = parseFloat(document.getElementById("radio").value);
+  if (radio > 0) {
+    return alert(areaC(radio));
+  } else {
+    return alert("Error, valores negativos");
   }
 }
