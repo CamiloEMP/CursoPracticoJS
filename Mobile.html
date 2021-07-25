@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 600px)">
+  <link rel="stylesheet" href="./Desktop.css" media="screen and (min-width: 800px)">
+  <link rel="stylesheet" href="./style.css">
+  <title>Figuras geométricas</title>
+</head>
+<body>
+  <header class="header">
+    <h1>Calcular figuras geométricas</h1>
+  </header>
+  <main class="container">
+    <section class="cuadrado">
+      <h2>Calcula el área y perímetro de un cuadrado</h2>
+      <form>
+        <label for="inputCuadrado">¿Cuando mide cada lado del cuadrado?</label>
+        <input id="inputCuadrado" type="number" placeholder="lado">
+        <button class="buttom-margin" type="button" onclick="perimetroCuadrado()">Calcular el perímetro</button>
+        <button class="buttom-margin" type="button" onclick="areaCuadrado()">Calcular el área</button>
+      </form>
+    </section>
+    <section class="triangulo">
+      <h2>Calcular el área y perímetro de un triangulo equilatero</h2>
+      <form>
+        <label for="inputLadoA">¿Cuanto mide el primer lado?</label>
+        <input id="inputLadoA" type="number" placeholder="lado a">
+        <label for="inputLadoB">¿Cuanto mide el segundo lado?</label>
+        <input id="inputLadoB" type="number" placeholder="lado b">
+        <label for="inputBase">¿Cuanto mide la base?</label>
+        <input id="inputBase" type="number" placeholder="base">
+        <button class="buttom-margin" type="button" onclick="perimetroTriangulo1()">Calcular el perímetro</button>
+        <button class="buttom-margin" type="button" onclick="areaTriangulo1()">Calcular el área</button>
+      </form>
+    </section>
+    <section class="trianguloIsosc">
+      <h2>Calcular el área y perímetro de un triangulo isosceles</h2>
+      <form>
+        <label for="ladoAIsosceles">¿Cuanto mide el primer lado?</label>
+        <input id="ladoAIsosceles" type="number" placeholder="lado a">
+        <label for="ladoBIsosceles">¿Cuanto mide el segundo lado?</label>
+        <input id="ladoBIsosceles" type="number" placeholder="lado b">
+        <label for="baseIsosceles">¿Cuanto mide la base?</label>
+        <input id="baseIsosceles" type="number" placeholder="base">
+        <button class="buttom-margin" type="button" onclick="pTrianguloIsosc()">Calcular el perímetro</button>
+        <button class="buttom-margin" type="button" onclick="hTrianguloIsosc()">Calcular la altura</button>
+        <button class="buttom-margin" type="button" onclick="aTrianguloIsosc()">Calcular el área</button>
+      </form>
+    </section>
+    <section class="circulo">
+      <h2>Calcular el área y perímetro de un Circulo</h2>
+      <form>
+        <label for="radio">¿Cuanto mide el radio?</label>
+        <input id="radio" type="number" placeholder="radio">
+        <!-- <label for="inputLadoB">¿Cuanto mide el segundo lado?</label>
+        <input id="inputLadoB" type="number" placeholder="lado b"> -->
+        <button class="buttom-margin" type="button" onclick="circuferenciaCriculo()">Calcular la circuferencia</button>
+        <button class="buttom-margin" type="button" onclick="circuferenciaCriculo()">Calcular el diametro</button>
+        <button class="buttom-margin" type="button" onclick="areaCirculo()">Calcular el área</button>
+      </form>
+    </section>
+  </main>
+  <script src="./figuras.js"></script>
+</body>
+</html>
