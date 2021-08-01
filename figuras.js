@@ -50,14 +50,24 @@ console.groupEnd();
 function perimetroCuadrado(){
   let input = document.getElementById("inputCuadrado");
   let value = input.value;
-  let perimetro = perimetroC(value);
-  alert(perimetro);
+  let result = document.getElementById("resultadoPCuadrado");
+  if (value > 0) {
+    let perimetro = perimetroC(value);
+    result.innerHTML = perimetro;
+  } else {
+    result.innerHTML = "Error";
+  }
 }
 function areaCuadrado() {
   let input = document.getElementById("inputCuadrado");
   let value = input.value;
-  let perimetro = areaC(value);
-  alert(perimetro);
+  let result = document.getElementById("resultadoACuadrado");
+  if (value > 0) {
+    let area = areaC(value);
+    result.innerHTML = area;
+  } else {
+    result.innerHTML = "Error";
+  }
 }
 
 function perimetroTriangulo1() {

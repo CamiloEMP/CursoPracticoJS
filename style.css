@@ -10,7 +10,7 @@ html {
 
 body{
   background-color: rgb(0, 0, 0);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 h2 {
@@ -36,6 +36,28 @@ h2 {
   border-radius: 1rem;
   margin: 1rem auto;
   width: 100%;
+}
+
+.cuadrado-result {
+  margin: .1rem 0 1.4rem 1.4rem;
+  padding-bottom: 1rem;
+}
+.cuadrado-result p {
+  margin: .5rem 0;
+}
+
+.container-result {
+  border: .1rem solid rgb(255, 255, 255);
+  border-radius: 1rem;
+  width: 15rem;
+}
+
+.result{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 1rem;
+  font-size: 1.6rem;
 }
 
 .triangulo {
