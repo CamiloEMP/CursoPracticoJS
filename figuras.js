@@ -70,7 +70,7 @@ function areaCuadrado() {
   }
 }
 
-function perimetroTriangulo1() {
+const perimetroTriangulo1= () => {
   let ladoA = parseFloat(document.getElementById("inputLadoA").value);
   let ladoB = parseFloat(document.getElementById("inputLadoB").value);
   let base = parseFloat(document.getElementById("inputBase").value);
